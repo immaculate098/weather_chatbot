@@ -1,0 +1,117 @@
+/* Container styling */
+body{
+  background: linear-gradient(to right, #ff007a, #4e00c2);
+}
+.chat-container {
+    position: relative;
+    height: 500px; /* Reduced height */
+    width: 500px;  /* Reduced width */
+    background-color: #f0f8ff; /* Light sky blue background */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    padding: 10px;
+  }
+  
+  /* Custom message colors */
+  .message.outgoing .message-content {
+    background-color: #007bff; /* Blue color for user messages */
+    color: white;
+  }
+  
+  .message.incoming .message-content {
+    background-color: #87ceeb; /* Sky blue color for ChatGPT responses */
+    color: black;
+  }
+  
+  /* Input styling */
+  .message-input {
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  .chat-footer p{
+    color: #000;
+  }
+
+
+/* CSS for the Header and Logout Button */
+.chat-header {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f0f0; /* Optional background color */
+  border-bottom: 2px solid #ddd; /* Optional bottom border for header */
+}
+
+.chat-header h1 {
+  font-size: 2rem;
+  background: linear-gradient(to right, #ff007a, #4e00c2); /* Gradient colors */
+  -webkit-background-clip: text; /* Clip the background to the text */
+  color: transparent; /* Make the text color transparent to show the gradient */
+  background-clip: text; /* For non-webkit browsers */
+  font-weight: bold;
+  text-transform: uppercase; /* Optional styling */
+}
+
+.logout-button {
+  background: linear-gradient(to right, #ff007a, #4e00c2);
+  color: white;
+  border: none;
+  /* padding: 10px 20px; */
+  border-radius: 5px;
+  cursor: pointer;
+  /* font-size: 1rem; */
+  width: 100px;
+  height: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #d32f2f;
+}
+
+.chat-app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+/* Style for the chat container */
+.chat-container {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Footer style */
+.chat-footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+  font-size: 0.9rem;
+  
+}
+
+
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .chat-container {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .chat-container {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+  
